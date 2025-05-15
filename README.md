@@ -2,5 +2,6 @@
 <p>Remember, no need to :
 <br> 
   1. Learn tailwind now, focus on deep JS.
+  <br>
   2. Learn angular, react. There is a process, roadmap for learning web dev (apni kaksha video).
 </p>
