@@ -1,0 +1,19 @@
+*{
+    padding: 0%;
+    border: 0;
+}
+#Love {
+    margin: 25px;
+  background-image: url("krishna_img.webp");
+  background-size: cover;
+  top: 0;
+  left: 0;
+  height: 200px;
+  width: 200px;
+  position: static;
+}
+p{
+    margin: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

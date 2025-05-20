@@ -5,12 +5,13 @@
 a{
     margin-right: 200px;
     color: white;
+    text-decoration: none;
 }
 #logo{
     font-size: 25px;
     color: #f08804;
 }
-div{
+#navbar{
     background-color: #0f1111;
 }
 #search-btn{

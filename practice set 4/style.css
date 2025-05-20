@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* The content which comes later has higher priority, so we set the #navbar div parameters later on */
+div{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    margin: 25px ;
+}
+a{
+    margin-right: 200px;
+    color: white;
+    text-decoration: none;
+}
+#logo{
+    font-size: 25px;
+    color: #f08804;
+}
+#navbar{
+    width: fit-content;
+    background-color: #0f1111;
+}
+#search-btn{
+    background-color: #f08804;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+#head{
+    background-color: rgb(255, 0, 0, 0.5);
+}
+#cont{
+    background-color: rgb(0, 255, 0, 0.5);
+}
+#foot{
+    background-color: rgb(0, 0, 255, 0.5);
+}
