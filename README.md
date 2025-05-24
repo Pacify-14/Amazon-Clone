@@ -16,7 +16,7 @@ It serves as a demonstration of my abilities in:
 Here's a glimpse of the project:
 
 **Desktop View:**
-![Desktop View of Amazon Clone](./amazon_clone_sc.png)
+![Desktop View of Amazon Clone](./Amazon%20Clone/amazon_clone_sc.png)
 
 <!-- **Mobile View:**
 ![Mobile View of Amazon Clone](./assets/screenshots/amazon-clone-mobile.png)
