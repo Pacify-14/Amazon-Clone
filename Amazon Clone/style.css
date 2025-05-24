@@ -212,7 +212,6 @@ body {
 .hero-main-section {
   background-image: url(hero_image.jpg); /* Kept image name */
   background-size: cover;
-  background-position: center; /* Added for better positioning */
   height: 350px; /* Adjusted */
   display: flex;
   justify-content: center;
