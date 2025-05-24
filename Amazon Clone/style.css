@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box; /*padding wagera content ke andar hi included ho...not overflow */
+
+}
+p{
+    font-size: 10px;
+}
+
+.navbar{
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+#nav-logo{
+    height: 50px;
+    width: 100px;
+    
+}
+#amazon_logo{
+    height: 50px;
+    width: 100px;
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    &:hover{
+        border-radius: 5%;
+    border: 0.2px solid white;
+    }
+}
+
+#add-fir{
+    font-size: 0.85rem;
+    color: #cccccc;
+    margin-left: 14px; /*left se spacing dene ki trick!! */
+}#add-sec{
+    font-size: 1rem;
+}
+#deli-hover{
+
+    padding-left: 2px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100px;
+    &:hover{
+        border-radius: 5%;
+        border: 1px solid white;
+    }
+}
+#addr{
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+/*Nav Search*/
+#nav-search{
+    /* border-radius: %; */
+    width: 620px;
+    height: 40px;
+    display: flex;
+    border-radius: 5%;
+}
+#nav-drop{
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+#nav-inp{ 
+        width: 100%;
+    }
+    #search-icon{
+        width: 5%;
+    }

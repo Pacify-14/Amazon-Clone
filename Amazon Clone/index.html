@@ -5,9 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazon Clone</title>
     <link rel="stylesheet" href="style.css">
+    <!--copied from cdnjs website directly: --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
      
 </head>
 <body>
-    
+    <!--deli-hover -> an extra wrapper div for the 'hover' part, else items alignment 
+    done in the inside div only... -->
+    <header>
+        <div class="navbar">
+            <!--for some reason there was another div "nav-logo", inside which
+            the div "amazon_logo(below) was made..."-->
+                <div id="nav-logo"><div id="amazon_logo"></div></div>
+            <div id="deli-hover"><div id="nav-deliver">
+                <p id="add-fir">Deliver to</p>
+                <div id="addr">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-sec"> &nbsp;India</p>
+                </div>
+            </div>
+        </div>
+        <div id="nav-search">
+                <select name="nav-drop" id="nav-drop"><option value="">All</option></select>
+                <input id="nav-inp" type="text" placeholder="Search Amazon">
+                <div id="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+    </header>
 </body>
 </html>

@@ -1,0 +1,2 @@
+fontawesome.com
+cdnjs -> link code with font awesomeg(links to closest server to access data)
