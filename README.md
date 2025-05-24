@@ -16,7 +16,7 @@ It serves as a demonstration of my abilities in:
 Here's a glimpse of the project:
 
 **Desktop View:**
-![Desktop View of Amazon Clone](./amazon-clone-desktop.png)
+![Desktop View of Amazon Clone](./amazon_clone_sc.png)
 *(Replace with your actual screenshot path)*
 
 <!-- **Mobile View:**
@@ -116,7 +116,7 @@ While this project focuses on the frontend HTML/CSS structure, future developmen
 
 *   **Soumodeep Chatterjee**
 *   GitHub: [@Pacify-14](https://github.com/Pacify-14)
-*   LinkedIn: [@Soumodeep-Chatterjee-IITD](https://www.linkedin.com/in/soumodeep-chatterjee-iitd-b68ba328a/) (Optional)
+*   LinkedIn: [@Soumodeep-Chatterjee-IITD](https://www.linkedin.com/in/soumodeep-chatterjee-iitd-b68ba328a/) 
 
 ---
 
