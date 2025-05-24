@@ -1,76 +1,502 @@
-*{
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    border: border-box; /*padding wagera content ke andar hi included ho...not overflow */
-
-}
-p{
-    font-size: 10px;
+* {
+  margin: 0;
+  padding: 0; /* Added padding reset */
+  font-family: "Roboto", "Arial", sans-serif; /* Using font from index2 */
+  box-sizing: border-box; /* Corrected from 'border: border-box' */
 }
 
-.navbar{
-    height: 60px;
-    background-color: #0f1111;
-    color: white;
-    display: flex;
-    align-items: center;
+body {
+  background-color: #e2e7e6; /* Background for outside shop section */
 }
-#nav-logo{
-    height: 50px;
-    width: 100px;
-    
+
+.navbar {
+  height: 60px;
+  background-color: #0f1111; /* Kept color */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 0.5rem; /* Added some padding */
 }
-#amazon_logo{
-    height: 50px;
-    width: 100px;
-    background-image: url("amazon_logo.png");
-    background-size: cover;
-    &:hover{
-        border-radius: 5%;
-    border: 0.2px solid white;
+
+/* Common Interactive Border for Navbar Elements */
+.interactive-border {
+  padding: 0.5rem 0.3rem; /* Using rem */
+  border: 1.5px solid transparent;
+  border-radius: 0.2rem; /* Subtle border radius */
+}
+
+.interactive-border:hover {
+  border: 1.5px solid white;
+}
+
+.interactive-border-light { /* For panel items */
+  padding: 0.3rem 0.5rem;
+  border: 1.5px solid transparent;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.interactive-border-light:hover {
+  border: 1.5px solid white;
+}
+
+
+/* BOX 1: Logo */
+.nav-logo-wrapper {
+  height: 50px;
+  width: 100px;
+  display: flex; /* For centering logo-img if needed */
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-img {
+  background-image: url(amazon_logo.png); /* Kept image name */
+  background-size: cover;
+  height: 45px; /* Slightly adjusted */
+  width: 90px; /* Slightly adjusted */
+}
+
+/* BOX 2: Address */
+.nav-address-section {
+    line-height: 1.1; /* Added for better text spacing */
+}
+.address-line-1 {
+  color: #cccccc;
+  font-size: 0.78rem; /* Using rem */
+  margin-left: 15px;
+}
+
+.address-line-2 {
+  font-size: 0.9rem; /* Using rem */
+  margin-left: 3px;
+  font-weight: 500; /* Adjusted from 700 */
+}
+
+.address-icon-group {
+  display: flex;
+  align-items: center;
+}
+.address-icon-group i {
+    margin-right: 3px; /* Spacing for icon */
+}
+
+/* BOX 3: Search Bar */
+.nav-search-bar {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%; /* Using percentage */
+  max-width: 620px; /* Max width */
+  height: 40px;
+  border-radius: 0.4rem; /* Adjusted border-radius */
+  overflow: hidden; /* To contain children's corners */
+}
+
+.nav-search-bar:focus-within { /* Highlight when focused */
+    border: 2px solid #febd68;
+}
+
+.search-dropdown {
+  background-color: #f3f3f3;
+  width: auto; /* Auto width based on content */
+  padding: 0 0.5rem;
+  text-align: center;
+  border: none;
+  /* border-top-left-radius and border-bottom-left-radius removed due to parent overflow:hidden */
+  font-size: 0.8rem;
+}
+
+.search-input-field {
+  width: 100%;
+  font-size: 0.95rem; /* Using rem */
+  border: none;
+  padding-left: 0.5rem;
+}
+
+.search-icon-container {
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  background-color: #febd68; /* Kept color */
+  color: #0f1111;
+  cursor: pointer;
+  /* border-top-right-radius and border-bottom-right-radius removed */
+}
+
+/* BOX 4: Language/Region */
+.nav-language-region {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.4rem; /* Adjusted padding */
+}
+.nav-language-region img {
+    margin-right: 5px;
+}
+
+.language-region-select {
+  border: none;
+  color: white;
+  background-color: #0f1111;
+  font-weight: bold;
+  font-size: 0.85rem; /* Using rem */
+  padding: 0.2rem;
+}
+
+/* BOX 5 & 6: Sign in, Returns */
+.nav-signin-account span, .nav-returns-orders span {
+  font-size: 0.78rem; /* Using rem */
+}
+
+.nav-secondary-text { /* Combined class for nav-second */
+  font-size: 0.9rem; /* Using rem */
+  font-weight: 500; /* Adjusted */
+}
+
+/* BOX 7: Cart */
+.nav-cart-section {
+  font-size: 0.9rem; /* Using rem */
+  font-weight: 500; /* Adjusted */
+  display: flex;
+  align-items: center;
+}
+.nav-cart-section span {
+  margin-left: 0.5rem; /* Using rem */
+}
+
+.nav-cart-section i {
+  font-size: 1.8rem; /* Using rem */
+}
+
+/* Panel Navigation */
+.panel-nav {
+  height: 40px;
+  background-color: #222f3d; /* Kept color */
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: flex-start; /* Changed from space-evenly */
+  padding: 0 0.8rem; /* Added padding */
+  gap: 0.5rem; /* Added gap between items */
+}
+
+.panel-all-menu {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem; /* Gap between icon and text */
+}
+
+.panel-options {
+  display: flex;
+  gap: 0.8rem; /* Gap between p tags */
+  font-size: 0.88rem; /* Using rem */
+  flex-grow: 1; /* Allow options to take space */
+}
+
+.panel-options p {
+  display: inline-block; /* Changed from inline */
+  padding: 0.3rem 0.4rem; /* Added padding to individual items */
+}
+
+.panel-electronic-deals {
+  font-size: 0.9rem; /* Using rem */
+  font-weight: 500; /* Adjusted */
+  padding: 0.3rem 0.5rem;
+}
+
+/* Hero Section */
+.hero-main-section {
+  background-image: url(hero_image.jpg); /* Kept image name */
+  background-size: cover;
+  background-position: center; /* Added for better positioning */
+  height: 350px; /* Adjusted */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 1.5rem; /* Using rem */
+}
+
+.hero-message {
+  background-color: white;
+  color: black;
+  height: auto; /* Auto height */
+  padding: 0.8rem 1rem; /* Using rem for padding */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.88rem; /* Using rem */
+  width: 85%; /* Using percentage */
+  max-width: 900px; /* Added max-width */
+  text-align: center; /* Centered text */
+  border-radius: 0.3rem;
+}
+
+.hero-message a {
+  color: #007185; /* Kept color */
+  text-decoration: none;
+  margin-left: 0.3rem;
+}
+.hero-message a:hover {
+    text-decoration: underline;
+}
+
+/* Shop Section */
+.shop-grid-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 1rem 0.5rem; /* Using rem */
+  /* background-color: #e2e7e6; Already on body */
+}
+
+.product-box { /* Renamed from .box */
+  background-color: white;
+  width: 23.5%; /* Adjusted */
+  min-width: 250px; /* Added min-width for smaller screens */
+  padding: 1.2rem 0.8rem; /* Using rem */
+  margin-top: 1rem; /* Using rem */
+  display: flex; /* Added for content alignment */
+  flex-direction: column; /* Added */
+  border-radius: 0.25rem; /* Subtle radius */
+}
+
+.box-image { /* Renamed from .box-img */
+  height: 280px; /* Adjusted */
+  background-size: cover;
+  background-position: center; /* Added */
+  margin-top: 0.8rem; /* Using rem */
+  margin-bottom: 0.8rem; /* Using rem */
+}
+
+.box-content-inner { /* Renamed from .box-content */
+  margin-left: 0.5rem; /* Using rem */
+  margin-right: 0.5rem; /* Using rem */
+  flex-grow: 1; /* Allow content to grow */
+  display: flex; /* Added */
+  flex-direction: column; /* Added */
+}
+.box-content-inner h2 {
+    font-size: 1.2rem; /* Using rem */
+    margin-bottom: 0.5rem;
+}
+
+.box-content-inner p {
+    margin-top: auto; /* Pushes "See more" to the bottom */
+}
+.box-content-inner a {
+  color: #007185; /* Kept color */
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+.box-content-inner a:hover {
+    color: #c7511f; /* Amazon orange for hover */
+}
+
+/* Footer */
+footer {
+  margin-top: 1.5rem; /* Using rem */
+}
+
+.footer-panel-1 {
+  background-color: #37475a; /* Kept color */
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.88rem; /* Using rem */
+  cursor: pointer;
+}
+.footer-panel-1:hover {
+    background-color: #485769;
+}
+
+.footer-panel-2 {
+  background-color: #222f3d; /* Kept color */
+  color: white;
+  padding: 2rem 0; /* Using rem */
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; /* Added for responsiveness */
+  gap: 1rem; /* Added gap */
+}
+
+.footer-panel-2 ul {
+  margin-top: 1.2rem; /* Using rem */
+  list-style: none; /* Removed bullets */
+  min-width: 180px; /* For better layout on wrap */
+}
+.footer-panel-2 ul p { /* Title of each ul */
+    font-size: 1rem; /* Using rem */
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+}
+
+.footer-panel-2 ul a {
+  display: block;
+  font-size: 0.85rem; /* Using rem */
+  margin-top: 0.6rem; /* Using rem */
+  color: #dddddd; /* Kept color */
+  text-decoration: none;
+}
+.footer-panel-2 ul a:hover {
+    text-decoration: underline;
+}
+
+.footer-panel-3 {
+  background-color: #222f3d; /* Kept color */
+  color: black;
+  border-top: 0.5px solid #445363; /* Adjusted color */
+  height: auto; /* Auto height */
+  padding: 1rem 0; /* Using rem */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Added */
+  gap: 1rem; /* Added */
+}
+.footer-select{
+    color: black;
+}
+
+.footer-logo-img { /* Renamed from .f_logo */
+  background-image: url(amazon_logo.png); /* Kept image name */
+  background-size: cover;
+  height: 40px; /* Adjusted */
+  width: 80px;  /* Adjusted */
+  margin-right: 1rem; /* Added margin */
+}
+
+.footer-interactive-element { /* Common class for lang, currency, region */
+  font-size: 0.8rem; /* Using rem */
+  padding: 0.4rem 0.5rem; /* Using rem */
+  background-color: transparent; /* Made transparent to inherit from parent */
+  color: white;
+  border: 0.8px solid #888888; /* Adjusted color */
+  border-radius: 0.3rem; /* Adjusted radius */
+  margin: 0.2rem; /* Added margin */
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.footer-interactive-element i {
+    font-size: 0.9rem; /* Adjusted icon size */
+    /* height and width from original i styling removed */
+}
+.footer-interactive-element img {
+    margin-right: 0.3rem;
+}
+
+.footer-select { /* Common class for selects in footer */
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 0.8rem;
+}
+.footer-select:focus {
+    outline: none;
+}
+
+
+.footer-panel-4 {
+  background-color: #0f1111; /* Kept color */
+  color: white;
+  padding: 1.5rem 0; /* Using rem, adjusted padding */
+  font-size: 0.75rem; /* Using rem */
+  text-align: center;
+}
+
+.footer-pages-links {
+  margin-bottom: 0.5rem; /* Using rem */
+}
+
+.footer-pages-links a {
+  margin: 0 0.5rem; /* Using rem */
+  color: white;
+  text-decoration: none;
+}
+.footer-pages-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-copyright {
+  font-size: 0.75rem; /* Using rem */
+}
+
+/* Responsive adjustments (basic example) */
+@media (max-width: 1000px) {
+    .panel-options {
+        width: auto; /* Allow panel options to shrink */
+        font-size: 0.8rem;
+        gap: 0.5rem;
+    }
+    .panel-electronic-deals {
+        display: none; /* Hide less critical item */
+    }
+    .nav-search-bar {
+        width: 50%;
+    }
+    .nav-language-region, .nav-signin-account, .nav-returns-orders {
+        display: none; /* Hide some elements on smaller navbar */
     }
 }
 
-#add-fir{
-    font-size: 0.85rem;
-    color: #cccccc;
-    margin-left: 14px; /*left se spacing dene ki trick!! */
-}#add-sec{
-    font-size: 1rem;
-}
-#deli-hover{
-
-    padding-left: 2px;
-    display: flex;
-    align-items: center;
-    height: 50px;
-    width: 100px;
-    &:hover{
-        border-radius: 5%;
-        border: 1px solid white;
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap; /* Allow navbar items to wrap */
+        height: auto;
+        padding: 0.5rem;
     }
-}
-#addr{
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-}
-
-/*Nav Search*/
-#nav-search{
-    /* border-radius: %; */
-    width: 620px;
-    height: 40px;
-    display: flex;
-    border-radius: 5%;
-}
-#nav-drop{
-    border-top-left-radius: 5%;
-    border-bottom-left-radius: 5%;
-}
-#nav-inp{ 
+    .nav-search-bar {
         width: 100%;
+        order: 3; /* Change order */
+        margin-top: 0.5rem;
     }
-    #search-icon{
-        width: 5%;
+    .nav-logo-wrapper { order: 1; }
+    .nav-address-section { order: 2; }
+    .nav-cart-section { order: 4; margin-left: auto; } /* Push cart to the right */
+
+    .shop-grid-section {
+        justify-content: center;
     }
+    .product-box {
+        width: 45%; /* Two boxes per row */
+        min-width: unset;
+    }
+    .footer-panel-2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-panel-3 {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-box {
+        width: 90%; /* One box per row */
+    }
+    .hero-main-section {
+        height: 250px;
+    }
+    .hero-message {
+        font-size: 0.8rem;
+        width: 90%;
+    }
+    .panel-options p {
+        font-size: 0.8rem;
+        padding: 0.2rem;
+    }
+    .panel-nav {
+        justify-content: center;
+    }
+    .panel-all-menu {
+        margin-right: auto; /* Pushes it left */
+    }
+}

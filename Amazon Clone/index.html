@@ -4,34 +4,272 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazon Clone</title>
-    <link rel="stylesheet" href="style.css">
-    <!--copied from cdnjs website directly: --> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-     
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--deli-hover -> an extra wrapper div for the 'hover' part, else items alignment 
-    done in the inside div only... -->
     <header>
-        <div class="navbar">
-            <!--for some reason there was another div "nav-logo", inside which
-            the div "amazon_logo(below) was made..."-->
-                <div id="nav-logo"><div id="amazon_logo"></div></div>
-            <div id="deli-hover"><div id="nav-deliver">
-                <p id="add-fir">Deliver to</p>
-                <div id="addr">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p class="add-sec"> &nbsp;India</p>
-                </div>
-            </div>
+      <div class="navbar">
+        <div class="nav-logo-wrapper interactive-border">
+          <div class="logo-img"></div>
         </div>
-        <div id="nav-search">
-                <select name="nav-drop" id="nav-drop"><option value="">All</option></select>
-                <input id="nav-inp" type="text" placeholder="Search Amazon">
-                <div id="search-icon">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-            </div>
+
+        <div class="nav-address-section interactive-border">
+          <p class="address-line-1">Deliver to</p>
+          <div class="address-icon-group">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="address-line-2">India</p>
+          </div>
+        </div>
+
+        <div class="nav-search-bar">
+          <select class="search-dropdown">
+            <option>All</option>
+            </select>
+          <input placeholder="Search Amazon" class="search-input-field" />
+          <div class="search-icon-container">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+
+        <div class="nav-language-region interactive-border">
+          <img
+            width="25" 
+            height="25" 
+            src="https://img.icons8.com/color/48/india.png" 
+            alt="india flag"
+          />
+          <select class="language-region-select">
+            <option>EN</option> </select>
+        </div>
+
+        <div class="nav-signin-account interactive-border">
+          <p><span>Hello, sign in</span></p>
+          <p class="nav-secondary-text">Account & Lists</p>
+        </div>
+
+        <div class="nav-returns-orders interactive-border">
+          <p><span>Returns</span></p>
+          <p class="nav-secondary-text">& Orders</p>
+        </div>
+
+        <div class="nav-cart-section interactive-border">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span>Cart</span>
+        </div>
+      </div>
+
+      <div class="panel-nav">
+        <div class="panel-all-menu interactive-border-light">
+          <i class="fa-solid fa-bars"></i>
+          All
+        </div>
+
+        <div class="panel-options">
+          <p class="interactive-border-light">Today's Deals</p>
+          <p class="interactive-border-light">Customer Service</p>
+          <p class="interactive-border-light">Registry</p>
+          <p class="interactive-border-light">Gift Cards</p>
+          <p class="interactive-border-light">Sell</p>
+        </div>
+        <div class="panel-electronic-deals interactive-border-light">
+            Shop deals in Electronics
+        </div>
+      </div>
     </header>
+
+    <main>
+        <div class="hero-main-section">
+          <div class="hero-message">
+            <p>
+              You are on amazon.com. You can also shop on Amazon India for millions
+              of products with fast delivery.
+              <a href="#">Click here to go to amazon.in</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="shop-grid-section">
+          <div class="product-box">
+            <div class="box-content-inner">
+              <h2>Home and Living Essentials</h2>
+              <div
+                class="box-image"
+                style="background-image: url(box1_image.jpg)"
+              ></div>
+              <p><a href="#">See more</a></p>
+            </div>
+          </div>
+          <div class="product-box">
+            <div class="box-content-inner">
+              <h2>Personal Grooming Products</h2>
+              <div
+                class="box-image"
+                style="background-image: url(box2_image.jpg)" 
+              ></div>
+              <p><a href="#">See more</a></p>
+            </div>
+          </div>
+          <div class="product-box">
+            <div class="box-content-inner">
+              <h2>Home Office Furniture</h2>
+              <div
+                class="box-image"
+                style="background-image: url(box3_image.jpg)"
+              ></div>
+              <p><a href="#">See more</a></p>
+            </div>
+          </div>
+          <div class="product-box">
+            <div class="box-content-inner">
+              <h2>Smartphones and Electronics</h2>
+              <div
+                class="box-image"
+                style="background-image: url(box4_image.jpg)" 
+              ></div>
+              <p><a href="#">See more</a></p>
+            </div>
+          </div>
+          <div class="product-box">
+            <div class="box-content-inner">
+              <h2>Beauty and Makeup</h2>
+              <div
+                class="box-image"
+                style="background-image: url(box5_image.jpg)"
+              ></div>
+              <p><a href="#">See more</a></p>
+            </div>
+          </div>
+          <div class="product-box">
+            <div class="box-content-inner">
+              <h2>Pet Supplies</h2>
+              <div
+                class="box-image"
+                style="background-image: url(box6_image.jpg)"
+              ></div>
+              <p><a href="#">See more</a></p>
+            </div>
+          </div>
+          <div class="product-box">
+            <div class="box-content-inner">
+              <h2>Kids' Toys and Accessories</h2>
+              <div
+                class="box-image"
+                style="background-image: url(box7_image.jpg)"
+              ></div>
+              <p><a href="#">See more</a></p>
+            </div>
+          </div>
+          <div class="product-box">
+            <div class="box-content-inner">
+              <h2>Fashion and Accessories</h2>
+              <div
+                class="box-image"
+                style="background-image: url(box8_image.jpg)" 
+              ></div>
+              <p><a href="#">See more</a></p>
+            </div>
+          </div>
+        </div>
+    </main>
+
+    <footer>
+      <div class="footer-panel-1">Back to top</div>
+      <div class="footer-panel-2">
+        <ul>
+          <p>Get to Know Us</p>
+          <a href="#">Careers</a>
+          <a href="#">Blog</a>
+          <a href="#">About Amazon</a>
+          <a href="#">Investor Relations</a>
+          <a href="#">Amazon Devices</a>
+          <a href="#">Amazon Science</a>
+        </ul>
+        <ul>
+          <p>Make Money with Us</p>
+          <a href="#">Sell product on Amazon</a>
+          <a href="#">Sell on Amazon Business </a>
+          <a href="#">Sell apps on Amazon</a>
+          <a href="#">Become an Affiliate</a>
+          <a href="#">Advertise Your Products</a>
+          <a href="#">Self-Publish with Us</a>
+          <a href="#">Host an Amazon Hub</a>
+          <a href="#">See More Make Money with Us</a>
+        </ul>
+        <ul>
+          <p>Amazon Payment Products</p>
+          <a href="#">Amazon Business Card</a>
+          <a href="#">Shop with Points</a>
+          <a href="#">Reload Your Balance</a>
+          <a href="#">Amazon Currency Converter</a>
+        </ul>
+        <ul>
+          <p>Let Us Help You</p>
+          <a href="#">Amazon and COVID-19</a>
+          <a href="#">Your Account</a>
+          <a href="#">Your Orders</a>
+          <a href="#">Shipping Rates & Policies</a>
+          <a href="#">Return & Replacements</a>
+          <a href="#">Manage Your Content and Devices</a>
+          <a href="#">Amazon Assistant</a>
+          <a href="#">Help</a>
+        </ul>
+      </div>
+
+        <div class="footer-panel-3">
+        <div class="footer-logo-img"></div>
+        <div class="footer-lang footer-interactive-element">
+          <i class="fa-solid fa-globe"></i>
+          English
+          <select class="footer-select">
+            <option value="EN">EN - English</option>
+            <option value="ES">ES - Español</option>
+            <option value="FR">FR - Français</option>
+            <option value="DE">DE - Deutsch</option>
+            <option value="HI">HI - हिन्दी</option>
+          </select>
+        </div>
+        <div class="footer-currency footer-interactive-element">
+          <i class="fa-solid fa-indian-rupee-sign"></i>
+          INR - Indian Rupee
+          <select class="footer-select">
+            <option value="INR">INR - Indian Rupee</option>
+            <option value="USD">USD - US Dollar</option>
+            <option value="EUR">EUR - Euro</option>
+            <option value="GBP">GBP - British Pound</option>
+            <option value="JPY">JPY - Japanese Yen</option>
+          </select>
+        </div>
+        <div class="footer-region footer-interactive-element">
+          <img
+            width="18"
+            height="18"
+            src="https://img.icons8.com/color/48/india.png" 
+            alt="india flag"
+          />
+          India
+          <select class="footer-select">
+            <option value="IN">India</option>
+            <option value="US">United States</option>
+            <option value="GB">United Kingdom</option>
+            <option value="CA">Canada</option>
+            <option value="AU">Australia</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="footer-panel-4">
+        <div class="footer-pages-links">
+          <a href="#">Conditions of Use</a>
+          <a href="#">Privacy Notice</a>
+          <a href="#">Your Ads Privacy Choices</a>
+        </div>
+        <div class="footer-copyright">
+            <i class="fa-regular fa-copyright"></i>
+         1996-2025, Amazon.com, Inc. or its affiliates
+        </div>
+      </div>
+    </footer>
 </body>
 </html>
