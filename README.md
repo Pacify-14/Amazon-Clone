@@ -17,7 +17,6 @@ Here's a glimpse of the project:
 
 **Desktop View:**
 ![Desktop View of Amazon Clone](./amazon_clone_sc.png)
-*(Replace with your actual screenshot path)*
 
 <!-- **Mobile View:**
 ![Mobile View of Amazon Clone](./assets/screenshots/amazon-clone-mobile.png)
@@ -74,11 +73,11 @@ Here's a glimpse of the project:
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/[your-github-username]/amazon-clone.git
+    git clone https://github.com/Pacify-14/Amazon-Clone.git
     ```
 2.  **Navigate to the project directory:**
     ```bash
-    cd amazon-clone
+    cd Amazon Clone
     ```
 3.  **Open `index.html` in your preferred web browser.**
 
@@ -105,11 +104,8 @@ While this project focuses on the frontend HTML/CSS structure, future developmen
     *   Making the search bar interactive (though without backend, it would be mock functionality).
     *   Adding a functional image carousel for the hero section or product galleries.
     *   Basic client-side cart functionality.
-*   **Accessibility (A11y) Improvements:** Conducting a thorough accessibility audit and implementing ARIA attributes and keyboard navigation enhancements.
-*   **Modularization:** Breaking down CSS into more modular components (e.g., using a preprocessor like SASS/SCSS).
 *   **Backend Integration:** Connecting to a mock API or a simple backend to dynamically load product data.
-*   **Adding More Pages:** Building out product detail pages, category pages, or a mock checkout flow.
-
+*   **Adding More Pages** 
 ---
 
 ## 👤 Author
